@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transcript Test</title>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" href="mystyle.css"> -->
+</head>
+<body>
+    <form id="request-form" action="/" method="post">
+        <div>
+            <label for="channelId">channelId:</label>
+            <input type="text" name="channelId" />
+        </div>
+        <div>
+            <label for="conversationId">ConversationId:</label>
+            <input type="text" name="conversationId" />
+        </div>
+        <div>
+            <label for="token">continuationToken:</label>
+            <input type="text" name="token" />
+        </div>
+        
+        <div class="button">
+            <button type="submit">Retrieve Conversation</button>
+        </div>
+
+        <div>
+            <textarea name="conversationLog" rows="5" cols="40" id="msg"></textarea>
+        </div>
+    </form>
+    <div id="result"></div>
+    <!-- <script>
+        $(document).ready(function(){
+            $("#request-form").submit(function(event){
+                event.preventDefault();
+                var channelId = $('#channelId').val();
+                var conversationId = $('#conversationId').val();
+                $.ajax({
+                    method: 'post',
+                    url: '/transcript',
+                    data: JSON.stringify(),
+                    contentType: 'application/json',
+                    success: function(data) {
+                        $('#conversationLog').val(data);
+                    }
+    
+                })
+            });
+        });
+    </script> -->
+</body>
+</html>

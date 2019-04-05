@@ -1,0 +1,26 @@
+{
+  "name": "conversation-log",
+  "version": "1.0.0",
+  "description": "Simple web page which can retrieve conversation log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angie4u/conversation-log.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angie4u/conversation-log/issues"
+  },
+  "homepage": "https://github.com/angie4u/conversation-log#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "botbuilder-azure": "^4.4.0-preview.56",
+    "dotenv": "^7.0.0",
+    "restify": "^8.2.0"
+  }
+}
